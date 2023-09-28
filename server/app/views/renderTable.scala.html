@@ -1,0 +1,17 @@
+@(teams: Array[Array[String]])(implicit flash: Flash)
+
+@main("Rendering Table"){
+    <h2>Rendered Table of First Three Teams</h2>
+
+    <div>
+        <table>
+            @for(row <- teams){
+                <tr>
+                @for(column <- row){
+                    <td>@column</td>
+                }
+                </tr>
+            }
+        </table>
+    </div>
+}

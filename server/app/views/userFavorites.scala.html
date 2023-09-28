@@ -1,0 +1,14 @@
+@()(implicit flash: Flash)
+
+@main("User Favorites"){
+    <h2>Users favorites</h2>
+
+    <form method="get" action="/displayFavorite">
+        Name: <input type="text" name="name"></input>
+        <br>
+        Color: <input type="text" name="color"></input>
+        <br>
+        <input type="submit"></input>
+    </form>
+
+}
